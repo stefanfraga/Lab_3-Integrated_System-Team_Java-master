@@ -1,0 +1,10 @@
+;defines first as x25 .ent
+SRB      .ORIG
+         .ENT    Sum
+;
+;add R1 and R2, store sum in R1
+Sum      ADD     R1,R1,R2
+;branch back to caller
+         RET
+         TRAP    x25
+         .END    Sum

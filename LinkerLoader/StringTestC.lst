@@ -1,0 +1,4 @@
+                              	 Line: 1    tc3      .ORIG
+                              	 Line: 2             .ENT    store
+0000  14a1    0001010010100001	 Line: 3    store    ADD     R2,R2,val
+0001  3000    0011000000000000	 Line: 4             ST      R0,end

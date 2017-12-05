@@ -1,0 +1,8 @@
+;defines first as x25 .ent
+tc1      .ORIG
+         .ENT    First
+;
+Start1   LD      R1,x47
+First    .EQU    x25
+         TRAP    x25
+         .END    Start1

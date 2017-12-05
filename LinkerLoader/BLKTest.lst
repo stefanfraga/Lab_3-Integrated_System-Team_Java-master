@@ -1,0 +1,18 @@
+                              	 Line: 7    tc1      .ORIG   
+                              	 Line: 8             .EXT    cal2
+                              	 Line: 9             .EXT    what
+                              	 Line: 10            .EXT    cal
+                              	 Line: 11            .EXT    cal3
+                              	 Line: 12            .EXT    cal4
+                              	 Line: 13            .ENT    Begin
+0000  1020S5cal  0001000000100000	 Line: 14   Begin    ADD     R0,R0,cal
+                              	 Line: 15   val      .EQU    Begin
+0001  4800X9what  0100100000000000	 Line: 16            JSR     what
+0002  f000T8cal  1111000000000000	 Line: 17            TRAP    cal      
+0003                          	 Line: 18   blk      .BLKW   #11
+000e  002e    0000000000101110	 Line: 19   hell     .STRZ   ".END"
+000f  0045    0000000001000101	 Line: 19   
+0010  004e    0000000001001110	 Line: 19   
+0011  0044    0000000001000100	 Line: 19   
+0012  0000    0000000000000000	 Line: 19   
+                              	 Line: 20            .END    

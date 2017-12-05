@@ -1,0 +1,7 @@
+                              	 Line: 1    tc3      .ORIG
+                              	 Line: 2             .ENT    inc
+                              	 Line: 3             .EXT    ret2
+0000  102f    0001000000101111	 Line: 4    inc      ADD     R0,R0,val
+                              	 Line: 5    val      .EQU    #15
+0001  4000X9ret2  0100000000000000	 Line: 6             JMP     ret2
+                              	 Line: 7             .END    

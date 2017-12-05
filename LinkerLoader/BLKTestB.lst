@@ -1,0 +1,15 @@
+                              	 Line: 1    tc2      .ORIG
+                              	 Line: 2             .ENT    what
+                              	 Line: 3             .ENT    cal
+0000  5022    0101000000100010	 Line: 4    Begin    AND     R0,R0,val
+                              	 Line: 5    cal      .EQU    x25
+                              	 Line: 6    val      .EQU    #2
+0001  1262    0001001001100010	 Line: 7    what     ADD     R1,R1,val
+0002  d000    1101000000000000	 Line: 8             RET      
+0003                          	 Line: 9    blk      .BLKW   val
+0005  002e    0000000000101110	 Line: 10   hell     .STRZ   ".END"
+0006  0045    0000000001000101	 Line: 10   
+0007  004e    0000000001001110	 Line: 10   
+0008  0044    0000000001000100	 Line: 10   
+0009  0000    0000000000000000	 Line: 10   
+                              	 Line: 11            .END    

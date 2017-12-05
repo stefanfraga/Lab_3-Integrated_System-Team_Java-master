@@ -1,0 +1,6 @@
+                              	 Line: 2    tc2      .ORIG
+                              	 Line: 3             .ENT    Second
+                              	 Line: 4             .EXT    First
+                              	 Line: 6    Second   .EQU    x25
+0000  f025    1111000000100101	 Line: 7             TRAP    Second
+                              	 Line: 8             .END    

@@ -1,0 +1,11 @@
+                              	 Line: 1    tc2      .ORIG
+                              	 Line: 2             .ENT    check
+                              	 Line: 3             .EXT    ret1
+                              	 Line: 4             .EXT    print
+0000  1036    0001000000110110	 Line: 5    check    ADD     R0,R0,#-10
+0001  1036    0001000000110110	 Line: 6             ADD     R0,R0,#-10
+0002  1036    0001000000110110	 Line: 7             ADD     R0,R0,#-10
+0003  1030    0001000000110000	 Line: 8             ADD     R0,R0,#-16
+0004  0400X9print  0000010000000000	 Line: 9             BRZ     print
+0005  d000    1101000000000000	 Line: 10            RET
+                              	 Line: 11            .END    

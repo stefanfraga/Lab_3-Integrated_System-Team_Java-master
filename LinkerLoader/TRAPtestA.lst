@@ -1,0 +1,12 @@
+                              	 Line: 2    tc1      .ORIG   
+                              	 Line: 3             .EXT    print
+                              	 Line: 4             .EXT    inc
+                              	 Line: 5             .ENT    begin
+                              	 Line: 6             .ENT    ret1
+                              	 Line: 7             .ENT    ret2
+0000  f033    1111000000110011	 Line: 8    begin    TRAP    x33
+0001  4800X9print  0100100000000000	 Line: 9             JSR     print
+0002  4800X9inc  0100100000000000	 Line: 10   ret1     JSR     inc
+0003  0c00M9  0000110000000000	 Line: 11   ret2     BRNZ    begin    
+0004  f025    1111000000100101	 Line: 12            TRAP    x25
+                              	 Line: 13            .END    

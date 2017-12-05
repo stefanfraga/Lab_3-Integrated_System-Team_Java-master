@@ -1,0 +1,9 @@
+;absolute programs shouldnt ever use external symbols because they should be the only segment
+tc2      .ORIG   x30B0
+         .ENT    Second
+;
+Start2
+Second   .EQU    =#50
+         TRAP    x25
+Y        .BLKW   x1
+         .END    Start2

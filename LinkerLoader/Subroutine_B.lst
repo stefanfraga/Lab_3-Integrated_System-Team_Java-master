@@ -1,0 +1,6 @@
+                              	 Line: 2    SRB      .ORIG
+                              	 Line: 3             .ENT    Sum
+0000  1242    0001001001000010	 Line: 6    Sum      ADD     R1,R1,R2
+0001  d000    1101000000000000	 Line: 8             RET
+0002  f025    1111000000100101	 Line: 9             TRAP    x25
+                              	 Line: 10            .END    Sum

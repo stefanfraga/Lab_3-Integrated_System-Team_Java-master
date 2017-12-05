@@ -1,0 +1,15 @@
+;test case for TRAPS
+tc1      .ORIG   
+         .EXT    store
+         .EXT    check
+         .ENT    begin
+         .ENT    print
+         .ENT    end
+begin    TRAP    x23
+         JSR     store
+         JSR     check  
+         LEA     R0,end
+         JMP     begin
+print    TRAP    x21
+end      TRAP    x25
+         .END    

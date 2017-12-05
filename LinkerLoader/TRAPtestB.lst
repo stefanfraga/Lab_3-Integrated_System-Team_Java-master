@@ -1,0 +1,6 @@
+                              	 Line: 1    tc2      .ORIG
+                              	 Line: 2             .ENT    print
+                              	 Line: 3             .EXT    ret1
+0000  f031    1111000000110001	 Line: 4    print    TRAP    x31
+0001  4000X9ret1  0100000000000000	 Line: 5             JMP     ret1
+                              	 Line: 6             .END    

@@ -1,0 +1,8 @@
+;test case for middle man .ext
+tc2      .ORIG
+         .ENT    Second
+         .EXT    First
+;
+Second   .EQU    x25
+         TRAP    Second
+         .END    

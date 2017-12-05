@@ -1,0 +1,6 @@
+tc2      .ORIG
+         .ENT    print
+         .EXT    ret1
+print    TRAP    x31
+         JMP     ret1
+         .END    

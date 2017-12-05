@@ -1,0 +1,14 @@
+;branches to subroutine
+SRCB     .ORIG
+         .EXT    Sum
+;
+Start1   LD      R1,=#23
+         LD      R2,=#32
+         JSR     Sum
+         ST      R1,Ans
+         TRAP    x25
+; -------------         
+Ans      .BLKW   #3
+
+
+         .END    Start1

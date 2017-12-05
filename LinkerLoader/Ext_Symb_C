@@ -1,0 +1,7 @@
+;test case for absolute program with .EXT symbol
+tc3      .ORIG 
+         .EXT    Second
+;
+Start3   LD      R1,Second
+         TRAP    x25
+         .END    Start3

@@ -1,0 +1,14 @@
+                              	 Line: 2    tc1      .ORIG   
+                              	 Line: 3             .EXT    store
+                              	 Line: 4             .EXT    check
+                              	 Line: 5             .ENT    begin
+                              	 Line: 6             .ENT    print
+                              	 Line: 7             .ENT    end
+0000  f023    1111000000100011	 Line: 8    begin    TRAP    x23
+0001  4800X9store  0100100000000000	 Line: 9             JSR     store
+0002  4800X9check  0100100000000000	 Line: 10            JSR     check  
+0003  e006M9  1110000000000110	 Line: 11            LEA     R0,end
+0004  4000M9  0100000000000000	 Line: 12            JMP     begin
+0005  f021    1111000000100001	 Line: 13   print    TRAP    x21
+0006  f025    1111000000100101	 Line: 14   end      TRAP    x25
+                              	 Line: 15            .END    

@@ -1,0 +1,7 @@
+tc3      .ORIG
+         .ENT    inc
+         .EXT    ret2
+inc      ADD     R0,R0,val
+val      .EQU    #15
+         JMP     ret2
+         .END    

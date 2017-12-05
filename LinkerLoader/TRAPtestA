@@ -1,0 +1,13 @@
+;test case for TRAPS
+tc1      .ORIG   
+         .EXT    print
+         .EXT    inc
+         .ENT    begin
+         .ENT    ret1
+         .ENT    ret2
+begin    TRAP    x33
+         JSR     print
+ret1     JSR     inc
+ret2     BRNZ    begin    
+         TRAP    x25
+         .END    

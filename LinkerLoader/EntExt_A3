@@ -1,0 +1,9 @@
+;test case for relocatable program with .EXT symbol
+;this shouldn't throw an error
+tc3      .ORIG 
+         .EXT    Second
+;
+Start3   LD      R1,x50
+         TRAP    Second     ;second = first = x25
+Y        .BLKW   x1
+         .END    Start3

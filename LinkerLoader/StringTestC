@@ -1,0 +1,7 @@
+tc3      .ORIG
+         .ENT    store
+store    ADD     R2,R2,val
+         ST      R0,R2
+val      .EQU    #1
+         RET
+         .END    

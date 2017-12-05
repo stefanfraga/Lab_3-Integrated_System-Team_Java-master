@@ -1,0 +1,11 @@
+tc2      .ORIG
+         .ENT    what
+         .ENT    cal
+Begin    AND     R0,R0,val
+cal      .EQU    x25
+val      .EQU    #2
+what     ADD     R1,R1,val
+         RET      
+blk      .BLKW   val
+hell     .STRZ   ".END"
+         .END    

@@ -1,0 +1,11 @@
+                              	 Line: 2    SRCB     .ORIG
+                              	 Line: 3             .EXT    Sum
+0000  2208M9  0010001000001000	 Line: 5    Start1   LD      R1,=#23
+0001  2409M9  0010010000001001	 Line: 6             LD      R2,=#32
+0002  4800X9Sum  0100100000000000	 Line: 7             JSR     Sum
+0003  3205M9  0011001000000101	 Line: 8             ST      R1,Ans
+0004  f025    1111000000100101	 Line: 9             TRAP    x25
+0005                          	 Line: 11   Ans      .BLKW   #3
+                              	 Line: 14            .END    Start1
+0008  0017    0000000000010111	 Line: L    
+0009  0020    0000000000100000	 Line: L    

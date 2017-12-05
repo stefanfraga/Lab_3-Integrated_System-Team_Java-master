@@ -1,0 +1,4 @@
+                              	 Line: 3    tc3      .ORIG 
+                              	 Line: 4             .EXT    Second
+0000  2250    0010001001010000	 Line: 6    Start3   LD      R1,x50
+0001  f000    1111000000000000	 Line: 7             TRAP    Second     ;second = first = x25

@@ -1,0 +1,6 @@
+                              	 Line: 2    tc1      .ORIG
+                              	 Line: 3             .ENT    First
+0000  2247    0010001001000111	 Line: 5    Start1   LD      R1,x47
+                              	 Line: 6    First    .EQU    x25
+0001  f025    1111000000100101	 Line: 7             TRAP    x25
+                              	 Line: 8             .END    Start1
